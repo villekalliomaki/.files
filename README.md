@@ -11,14 +11,12 @@ My Wayland dotfiles for:
 - Terminal [Alacritty](https://github.com/alacritty/alacritty)
 - Backlight manager [wluma](https://github.com/maximbaz/wluma)
 
-All colors/themes are based on `colors.txt`.
-
 ## Resources
 - [Get started with Wayland](https://www.fosskers.ca/en/blog/wayland)
-- [Color palette source](https://materialui.co/colors/)
+- [Color palette general](https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8)
+- [Terminal colors](https://github.com/eendroroy/alacritty-theme/blob/master/themes/hyper.yaml)
 
 ## Additional packages used
 - `zsh` the shell
-- `otf-font-awesome` for Waybar icons
-
-## Screenshots
+- `ttf-material-design-icons-git` for Waybar icons
+- `adobe-source-code-pro-fonts` monospaced font

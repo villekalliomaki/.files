@@ -1,0 +1,54 @@
+env:
+  TERM: xterm-256color
+
+window:
+  decorations: full
+  opacity: 0.8
+  startup_mode: Windowed
+  title: Alacritty
+  dynamic_title: true
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: Source Code Pro
+    style: Regular
+  bold:
+    family: Source Code Pro
+    style: Bold
+  italic:
+    family: Source Code Pro
+    style: Regular
+  size: 11.0
+  use_thin_strokes: true
+  builtin_box_drawing: true
+
+# https://github.com/eendroroy/alacritty-theme/blob/master/themes/hyper.yaml
+colors:
+  primary:
+    background: '#000000'
+    foreground: '#ffffff'
+  cursor:
+    text: '#F81CE5'
+    cursor: '#ffffff'
+  normal:
+    black:   '#000000'
+    red:     '#fe0100'
+    green:   '#33ff00'
+    yellow:  '#feff00'
+    blue:    '#0066ff'
+    magenta: '#cc00ff'
+    cyan:    '#00ffff'
+    white:   '#d0d0d0'
+  bright:
+    black:   '#808080'
+    red:     '#fe0100'
+    green:   '#33ff00'
+    yellow:  '#feff00'
+    blue:    '#0066ff'
+    magenta: '#cc00ff'
+    cyan:    '#00ffff'
+    white:   '#FFFFFF'

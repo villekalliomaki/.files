@@ -1,0 +1,28 @@
+prompt = '>'
+
+padding = 30
+
+font = 'Source Code pro'
+font_size = 25.0
+
+[history]
+decrease_interval = 48
+
+[colors]
+background = '#03045E'
+prompt = '#0077B6'
+text = '#0096C7'
+text_query = '#0096C7'
+text_selected = '#CAF0F8'
+
+[keybindings]
+# keybindings syntax: ctrl/shift/alt/logo as modifiers and a key joined by '+' signs
+# https://docs.rs/crate/x11-keysymdef/0.2.0/source/src/keysym.json
+paste = ["ctrl+v"]
+execute = ["KP_Enter", "Return"]
+delete = ["KP_Delete", "Delete", "BackSpace"]
+delete_word = ["ctrl+KP_Delete", "ctrl+Delete", "ctrl+BackSpace"]
+complete = ["Tab"]
+nav_up = ["Up"]
+nav_down = ["Down"]
+exit = ["Escape"]
