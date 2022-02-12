@@ -9,7 +9,6 @@ My Wayland dotfiles for:
 - ZSH + plugins... etc.. [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/) + [starship](https://github.com/starship/starship)
 - Notification daemon [dunst](https://github.com/dunst-project/dunst)
 - Terminal [Alacritty](https://github.com/alacritty/alacritty)
-- Backlight manager [wluma](https://github.com/maximbaz/wluma)
 
 ## Resources
 - [Get started with Wayland](https://www.fosskers.ca/en/blog/wayland)
