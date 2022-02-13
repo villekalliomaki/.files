@@ -50,7 +50,10 @@ exec swayidle -w \
     before-sleep 'swaylock -f -c 000000'
 
 ### Random wallapaper on start
-output * bg `find $HOME/wallpapers -type f | shuf -n 1` fill
+set $wallpaper_cmd find $HOME/wallpapers -type f | shuf -n 1
+output * bg `$wallpaper_cmd` fill
+# Bind for a new random wallpaper
+bindsym $mod+Shift+w exec swaymsg output "*" bg `$wallpaper_cmd` fill
 
 #### Basic binds
 # Start a terminal

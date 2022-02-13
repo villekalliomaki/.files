@@ -34,6 +34,7 @@ window#waybar.chromium {
 }
 
 #workspaces button:hover {
+    color: #03045E;
     box-shadow: inset 0 -3px #0096C7;
 }
 
