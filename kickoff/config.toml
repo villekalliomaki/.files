@@ -9,7 +9,7 @@ font_size = 25.0
 decrease_interval = 48
 
 [colors]
-background = '#03045E'
+background = '#03045E80'
 prompt = '#0077B6'
 text = '#0096C7'
 text_query = '#0096C7'
