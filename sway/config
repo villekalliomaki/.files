@@ -44,9 +44,11 @@ input type:touchpad {
 }
 
 #### Idle + lock
+# 5 min screen sleep
+# 30 min lockscreen
 exec swayidle -w \
-    timeout 300 'swaylock -f -c 000000' \
-    timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+    timeout 1800 'swaylock -f -c 000000' \
+    timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -f -c 000000'
 
 ### Random wallapaper on start
