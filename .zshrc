@@ -15,8 +15,8 @@ export EDITOR="vim"
 # Init starship
 eval "$(starship init zsh)"
 
-# Add bin location
-export PATH=/home/$HOME/.local/bin:$PATH
+# Add pip/python install location to path
+export PATH=$HOME/.local/bin:$PATH
 
 # Use terminal for GPG password prompt
 export GPG_TTY=$(tty)
