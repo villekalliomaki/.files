@@ -2,13 +2,14 @@
 
 My Wayland dotfiles for:
 
-- WM: [Sway](https://swaywm.org/)
+- WM: [sway](https://swaywm.org/)
+- Idle manager + locking: [swayidle](https://github.com/swaywm/swayidle) + [swaylock](https://github.com/swaywm/swaylock)
 - Status bar: [Waybar](https://github.com/Alexays/Waybar)
 - Display manager (login screen): [ly](https://github.com/nullgemm/ly)
 - Application launcher: [kickoff](https://github.com/j0ru/kickoff)
 - ZSH plugins + prompt: [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh/) + [starship](https://github.com/starship/starship)
 - Notification daemon: [dunst](https://github.com/dunst-project/dunst)
-- Terminal: [Alacritty](https://github.com/alacritty/alacritty)
+- Terminal: [alacritty](https://github.com/alacritty/alacritty)
 
 ## Resources
 - [Get started with Wayland](https://www.fosskers.ca/en/blog/wayland)
