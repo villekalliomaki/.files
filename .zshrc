@@ -32,3 +32,7 @@ HIST_STAMPS="dd.mm.yyyy"
 plugins=(git history jsontools last-working-dir kubectl)
 
 source $ZSH/oh-my-zsh.sh
+
+# Vault CLI autocomplete
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/vault vault
