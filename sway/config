@@ -5,6 +5,15 @@ set $down j
 set $up k
 set $right l
 
+#### Monitors desktop
+# HDMI-A-1 (AOC top)
+output HDMI-A-1 transform 180
+output HDMI-A-1 pos 960 -1080 res 1920x1080
+# DP-2 (Samsung)
+output DP-2 pos 0 0 res 3840x2160
+# DP-1 (Dell right side)
+output DP-1 pos 3840 540 res 1920x1080
+
 #### Backlight controls (https://www.reddit.com/r/swaywm/comments/fk08lu/comment/fkvhvkn/?utm_source=share&utm_medium=web2x&context=3)
 # User must have no-password sudo permissions to the light command
 bindsym --locked XF86MonBrightnessUp exec light -T 1.4
