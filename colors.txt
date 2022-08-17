@@ -1,10 +1,16 @@
-black       #000000
-background  #03045E
-blue1       #023E8A
-blue2       #0077B6
-blue3       #0096C7
-cyan1       #00B4D8
-cyan2       #48CAE4
-cyan3       #90E0EF
-light       #ADE8F4
-lighter     #CAF0F8
+white   F8F9FA
+
+light1  E9ECEF
+light2  CED4DA
+light3  ADB5BD
+
+dark1   6C757D
+dark2   495057
+dark3   343A40
+
+black   212529
+
+red     F94144
+orange  F3722C
+yellow  F9C74F
+green   90BE6D
