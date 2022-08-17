@@ -29,7 +29,7 @@
     text_icon_padding = 0
     frame_width = 3
 
-    frame_color = "#0077B6"
+    frame_color = "#495057"
 
     # auto/foreground/frame/a color
     separator_color = frame
@@ -89,17 +89,17 @@
 
 
 [urgency_low]
-    background = "#03045E"
-    foreground = "#90E0EF"
+    background = "#212529"
+    foreground = "#6C757D"
     timeout = 10
 
 [urgency_normal]
-    background = "#023E8A"
-    foreground = "#CAF0F8"
+    background = "#343A40"
+    foreground = "#ADB5BD"
     timeout = 20
 
 [urgency_critical]
-    background = "#CAF0F8"
-    foreground = "#03045E"
-    frame_color = "#03045E"
+    background = "#CED4DA"
+    foreground = "#343A40"
+    frame_color = "#E9ECEF"
     timeout = 0

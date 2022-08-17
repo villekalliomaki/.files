@@ -189,11 +189,11 @@ bar {
 # child_border: Border around the view itself.
 
 #### Theme                 border      background  text        indicator   child_border
-client.focused             #023E8A     #023E8A     #CAF0F8     #0077B6     #023E8A
-client.focused_inactive    #03045E     #03045E     #0077B6     #0077B6     #03045E
-client.focused_tab_title   #03045E     #023E8A     #CAF0F8     #0077B6     #023E8A
-client.unfocused           #03045E     #03045E     #0077B6     #0096C7     #03045E
-client.urgent              #CAF0F8     #CAF0F8     #03045E     #023E8A     #CAF0F8
+client.focused             #ADB5BD     #ADB5BD     #F8F9FA     #495057     #ADB5BD
+client.focused_inactive    #343A40     #343A40     #CED4DA     #CED4DA     #343A40
+client.focused_tab_title   #ADB5BD     #ADB5BD     #495057     #495057     #ADB5BD
+client.unfocused           #212529     #212529     #495057     #343A40     #212529
+client.urgent              #F94144     #F94144     #212529     #E9ECEF     #F94144
 
 #### Global config files
 include /etc/sway/config.d/*
