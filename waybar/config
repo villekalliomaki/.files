@@ -4,9 +4,9 @@
     "position": "top",
     "height": 18,
     "spacing": 4,
-    "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "keyboard-state", "battery", "clock", "tray"],
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-center": [""],
+    "modules-right": ["idle_inhibitor", "pulseaudio", "bluetooth", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
     "sway/window": {
         "max-length": 60
     },
@@ -39,13 +39,22 @@
         },
         "on-click": "pavucontrol"
     },
+    "bluetooth": {
+        "format": "",
+        "on-click-left": "bluetoothctl power on",
+        "format-connected": " {num_connections}",
+        "tooltip-format-connected": "{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_battery_percentage}%\t{device_address}"
+    },
     "memory": {
-        "format": "󰍛{used:0.1f}G"
+        "format": "󰍛{used:0.1f}G",
+        "tooltip": false
     },
     "temperature": {
         "critical-threshold": 80,
         "format": "{icon}{temperatureC}°C",
-        "format-icons": ["󱃃", "󰔏", "󱃂"]
+        "format-icons": ["󱃃", "󰔏", "󱃂"],
+        "tooltip": false
     },
     "backlight": {
         "format": "{icon}{percent}%",
