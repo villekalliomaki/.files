@@ -7,8 +7,8 @@
     width = (150, 400)
     # The maximum height
     height = 300
-    origin = top-right
-    offset = 15x15
+    origin = top-center
+    offset = 0x0
     scale = 0
     # 0 = no limit
     notification_limit = 0
@@ -90,7 +90,7 @@
 
 [urgency_low]
     background = "#212529"
-    foreground = "#6C757D"
+    foreground = "#ADB5BD"
     timeout = 10
 
 [urgency_normal]

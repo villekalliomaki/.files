@@ -65,6 +65,8 @@ window#waybar.chromium {
 #tray,
 #mode,
 #idle_inhibitor,
+#bluetooth,
+#language,
 #mpd {
     padding: 0 4px;
 }
@@ -140,8 +142,8 @@ label:focus {
 }
 
 #network.disconnected {
-    color: #03045E;
-    background-color: #495057;
+    color: #E9ECEF;
+    background-color: #6C757D;
 }
 
 #pulseaudio {
@@ -176,10 +178,19 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #495057;
+    background-color: #343A40;
 }
 
 #idle_inhibitor.activated {
+    background-color: #6C757D;
+    color: #E9ECEF;
+}
+
+#bluetooth {
+    background-color: #343A40;
+}
+
+#bluetooth.on {
     background-color: #6C757D;
     color: #E9ECEF;
 }

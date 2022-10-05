@@ -31,7 +31,9 @@ for_window [title="Picture-in-Picture"] floating enable, sticky on
 font pango:SourceCodePro Medium 8
 
 #### Gaps
-gaps inner 15
+gaps inner 10
+# No gaps with only one window open
+smart_gaps on
 
 #### Border
 # Disables title bars
@@ -53,11 +55,11 @@ input type:touchpad {
 }
 
 #### Idle + lock
-# 5 min screen sleep
-# 30 min lockscreen
+# 10 min screen sleep
+# 3600 min lockscreen
 exec swayidle -w \
     timeout 1800 'swaylock -f -c 000000' \
-    timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+    timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock -f -c 000000'
 
 ### Random wallapaper on start
