@@ -59,7 +59,6 @@ input type:touchpad {
 # never lockscreen
 exec swayidle -w \
     timeout 900 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -f -c 000000'
 
 ### Random wallapaper on start
 set $wallpaper_cmd find $HOME/wallpapers -type f | shuf -n 1
