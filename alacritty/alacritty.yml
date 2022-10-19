@@ -23,7 +23,6 @@ font:
     family: Source Code Pro
     style: Regular
   size: 11.0
-  use_thin_strokes: true
   builtin_box_drawing: true
 
 # https://github.com/eendroroy/alacritty-theme/blob/master/themes/hyper.yaml
