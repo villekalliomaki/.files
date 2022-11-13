@@ -7,7 +7,9 @@ export QT_QPA_PLATFORM=wayland-egl
 # Might have to be added to:
 # - ~/.pam_environment
 # - ???
-export MOZ_ENABLE_WAYLAND=1
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
 
 # Editor preference
 export EDITOR="vim"
