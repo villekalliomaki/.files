@@ -66,6 +66,8 @@ button:hover {
 #bluetooth,
 #language,
 #mpd {
+    color: #ADB5BD;
+    background-color: #343A40;
     padding: 0px 4px;
 }
 
