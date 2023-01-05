@@ -38,3 +38,5 @@ source $ZSH/oh-my-zsh.sh
 # Vault CLI autocomplete
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/vault vault
+
+complete -o nospace -C /usr/bin/nomad nomad
