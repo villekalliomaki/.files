@@ -19,23 +19,23 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
 for_window [title="Picture-in-Picture"] floating enable, sticky on
 
 #### Font
-font pango:SourceCodePro Medium 8
+font pango:Arimo Nerd Font 8
 
 #### Gaps
-gaps inner 10
+gaps inner 6
 # No gaps with only one window open
 smart_gaps on
 
 #### Border
 # Disables title bars
-default_border pixel 2
+default_border pixel 1
 smart_borders on
 
 #### Terminal
 set $term alacritty
 
 #### Launcher
-set $menu kickoff
+set $menu kickoff --from-file ~/.config/kickoff/custom --from-path
 
 #### Input
 input type:keyboard xkb_layout fi
@@ -46,14 +46,18 @@ input type:touchpad {
 }
 
 #### Idle + lock
-# 10 min screen sleep
-# 3600 min lockscreen
+# 5 min screen off
+# 10 minutes for lockscreen
 exec swayidle -w \
-    timeout 1800 'swaylock -f -c 000000' \
-    timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-    before-sleep 'swaylock -f -c 000000'
+	timeout 300 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+	timeout 600 'swaylock -f' \
+	before-sleep 'swaylock -f'
+# Keybind to toggle 
+bindsym $mod+Shift+XF86MonBrightnessUp output * dpms on
+bindsym $mod+Shift+XF86MonBrightnessDown output * dpms off
 
-exec wlsunset -l 60.192059 -L 24.945831 -t 3500 -T 6500
+# Less blue light
+# exec wlsunset -l 60.192059 -L 24.945831 -t 3500 -T 6500
 
 ### Random wallapaper on start
 set $wallpaper_cmd find $HOME/wallpapers -type f | shuf -n 1
@@ -79,7 +83,6 @@ bindsym $mod+Shift+r reload
 
 # Exit
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you want to exit sway? Wayland session will end.' -B 'Yes' 'swaymsg exit'
-
 
 #### Moving binds
 # Move your focus around
@@ -184,6 +187,9 @@ bindsym $mod+r mode "resize"
 #### Status bar
 bar {
     swaybar_command waybar
+    hidden_state hide
+    mode hide
+    modifier Mod4
 }
 
 # border:       Border around the title bar.
@@ -193,11 +199,11 @@ bar {
 # child_border: Border around the view itself.
 
 #### Theme                 border      background  text        indicator   child_border
-client.focused             #ADB5BD     #ADB5BD     #F8F9FA     #495057     #ADB5BD
-client.focused_inactive    #343A40     #343A40     #CED4DA     #CED4DA     #343A40
-client.focused_tab_title   #ADB5BD     #ADB5BD     #495057     #495057     #ADB5BD
-client.unfocused           #212529     #212529     #495057     #343A40     #212529
-client.urgent              #F94144     #F94144     #212529     #E9ECEF     #F94144
+client.focused             #ffffff     #000000     #ffffff     #000000     #ffffff
+client.focused_inactive    #000000     #000000     #333333     #ffffff     #000000
+client.focused_tab_title   #000000     #000000     #333333     #ffffff     #000000
+client.unfocused           #000000     #000000     #333333     #ffffff     #000000
+client.urgent              #990000     #990000     #333333     #000000     #990000
 
 #### Global config files
 include /etc/sway/config.d/*

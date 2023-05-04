@@ -1,19 +1,22 @@
-prompt = '>'
+prompt = '  '
 
-padding = 30
+padding = 350
 
-font = 'Source Code pro'
-font_size = 25.0
+fonts = [
+    'Symbols Nerd Font Mono',
+    'Arimo Nerd Font'
+]
+font_size = 20.0
 
 [history]
 decrease_interval = 48
 
 [colors]
-background = '#212529CC'
-prompt = '#ADB5BD'
-text = '#6C757D'
-text_query = '#ADB5BD'
-text_selected = '#F8F9FA'
+background = '#000000CC'
+prompt = '#FFFFFF'
+text = '#696969'
+text_query = '#FFFFFF'
+text_selected = '#FFFFFF'
 
 [keybindings]
 # keybindings syntax: ctrl/shift/alt/logo as modifiers and a key joined by '+' signs

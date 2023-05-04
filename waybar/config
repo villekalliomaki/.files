@@ -1,12 +1,25 @@
 {
-    
-    "layer": "bottom",
-    "position": "top",
-    "height": 18,
-    "spacing": 4,
-    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
-    "modules-center": [""],
-    "modules-right": ["idle_inhibitor", "pulseaudio", "bluetooth", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
+    "position": "bottom",
+    "bar_id": "bar-0",
+    "ipc": true,
+    "height": 12,
+    "spacing": 5,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "idle_inhibitor",
+        "pulseaudio",
+        "bluetooth",
+        "network",
+        "battery",
+        "clock",
+        "tray"
+    ],
     "sway/window": {
         "max-length": 60
     },
@@ -17,17 +30,12 @@
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%d.%m.%Y}"
     },
-    "cpu": {
-        "format": "󰘚{usage}%",
-        "tooltip": false
-    },
     "pulseaudio": {
         "scroll-step": 5,
-        "format": "{icon}{volume}% {format_source}",
-        "format-bluetooth": "{icon}󰂯{volume}% {format_source}",
-        "format-bluetooth-muted": "󰝟{icon}󰂯 {format_source}",
-        "format-muted": "󰝟{format_source}",
-        "format-source": "󰍬{volume}%",
+        "format": "{icon} {volume}% {format_source}",
+        "format-bluetooth": "{icon} 󰂯 {volume}% {format_source}",
+        "format-bluetooth-muted": "󰝟 {icon}󰂯 {format_source}",
+        "format-muted": "󰝟 {format_source}",
         "format-source-muted": "󰍭",
         "format-icons": {
             "headphone": "󰋋",
@@ -35,30 +43,22 @@
             "headset": "󰋎",
             "phone": "󰄜",
             "car": "󰄋",
-            "default": ["󰕿", "󰖀", "󰕾"]
+            "default": [
+                "󰕿",
+                "",
+                "󰕾"
+            ]
         },
         "on-click": "pavucontrol"
     },
     "bluetooth": {
         "format": "",
         "on-click-left": "bluetoothctl power on",
+        "on-click-right": "bluetoothctl power off",
+        "on-click-middle": "blueman-applet",
         "format-connected": " {num_connections}",
         "tooltip-format-connected": "{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_battery_percentage}%\t{device_address}"
-    },
-    "memory": {
-        "format": "󰍛{used:0.1f}G",
-        "tooltip": false
-    },
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{icon}{temperatureC}°C",
-        "format-icons": ["󱃃", "󰔏", "󱃂"],
-        "tooltip": false
-    },
-    "backlight": {
-        "format": "{icon}{percent}%",
-        "format-icons": ["󰃞", "󰃟", "󰃠"]
     },
     "battery": {
         "states": {
@@ -69,13 +69,23 @@
         "format": "{icon}{capacity}%",
         "format-charging": "󰂄{capacity}%",
         "format-plugged": "󰚥{capacity}%",
-        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ]
     },
     "network": {
-        "format-wifi": "󰖩{essid}/{frequency} ({signalStrength}%)",
-        "format-ethernet": "󰈀{ipaddr}/{cidr}",
+        "format-wifi": "󰖩 {essid}/{frequency} ({signalStrength}%)",
+        "format-ethernet": "󰈀 {ipaddr}/{cidr}",
         "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "󰌙",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click-right": "alacritty -e nmtui"
@@ -83,8 +93,8 @@
     "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "activated": "",
-            "deactivated": ""
+            "activated": "",
+            "deactivated": ""
         }
     }
 }
