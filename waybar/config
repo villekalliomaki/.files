@@ -14,9 +14,7 @@
     "modules-right": [
         "idle_inhibitor",
         "pulseaudio",
-        "bluetooth",
         "network",
-        "battery",
         "clock",
         "tray"
     ],
@@ -50,37 +48,6 @@
             ]
         },
         "on-click": "pavucontrol"
-    },
-    "bluetooth": {
-        "format": "",
-        "on-click-left": "bluetoothctl power on",
-        "on-click-right": "bluetoothctl power off",
-        "on-click-middle": "blueman-applet",
-        "format-connected": " {num_connections}",
-        "tooltip-format-connected": "{device_enumerate}",
-        "tooltip-format-enumerate-connected": "{device_alias}\t{device_battery_percentage}%\t{device_address}"
-    },
-    "battery": {
-        "states": {
-            "good": 90,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}{capacity}%",
-        "format-charging": "󰂄{capacity}%",
-        "format-plugged": "󰚥{capacity}%",
-        "format-icons": [
-            "󰁺",
-            "󰁻",
-            "󰁼",
-            "󰁽",
-            "󰁾",
-            "󰁿",
-            "󰂀",
-            "󰂁",
-            "󰂂",
-            "󰁹"
-        ]
     },
     "network": {
         "format-wifi": "󰖩 {essid}/{frequency} ({signalStrength}%)",
