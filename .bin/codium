@@ -1,0 +1,2 @@
+#!/bin/bash
+/sbin/codium --enable-features=UseOzonePlatform --ozone-platform=wayland
