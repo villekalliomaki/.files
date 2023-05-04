@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="/home/$USER/.oh-my-zsh"
 
+# Dark themes for things
+export GTK_THEME=Adwaita:dark
+
 # Wayland things
 export QT_QPA_PLATFORM=wayland-egl
 ###### Notice ######
@@ -15,8 +18,8 @@ export EDITOR="vim"
 # Init starship
 eval "$(starship init zsh)"
 
-# Add pip/python install location to path
-export PATH=$HOME/.local/bin:$PATH
+# Add pip/python install location and custom bin folder to path
+export PATH=$HOME/.bin:$HOME/.local/bin:$PATH
 
 # Use terminal for GPG password prompt
 export GPG_TTY=$(tty)
