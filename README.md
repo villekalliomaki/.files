@@ -16,7 +16,9 @@ My Wayland dotfiles for:
 - [Color palette general](https://coolors.co/palette/03045e-023e8a-0077b6-0096c7-00b4d8-48cae4-90e0ef-ade8f4-caf0f8)
 - [Terminal colors](https://github.com/eendroroy/alacritty-theme/blob/master/themes/hyper.yaml)
 
-## Additional packages used
-- `zsh` the shell
-- `ttf-material-design-icons-git` for Waybar icons
-- `adobe-source-code-pro-fonts` monospaced font
+## Shell and fonts
+1. Install zsh with `sudo pacman -S zsh`
+2. Install ohmyzsh `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+3. New zsh propmt `yay -S spaceship-prompt`
+4. The icon font `sudo pacman -S ttf-nerd-fonts-symbols-2048-em-mono`
+5. Font for waybar `sudo pacman -S ttf-arimo-nerd`

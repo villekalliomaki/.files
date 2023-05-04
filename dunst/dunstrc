@@ -4,11 +4,11 @@
     follow = mouse
 
     #### Geometry
-    width = (150, 400)
+    width = (200, 400)
     # The maximum height
     height = 300
     origin = top-center
-    offset = 0x0
+    offset = "0x50"
     scale = 0
     # 0 = no limit
     notification_limit = 0
@@ -19,6 +19,7 @@
     progress_bar_frame_width = 1
     progress_bar_min_width = 150
     progress_bar_max_width = 300
+    highlight = "#FFFFFF"
 
     indicate_hidden = yes
     # Between 2 notifications
@@ -27,9 +28,9 @@
     padding = 8
     horizontal_padding = 8
     text_icon_padding = 0
-    frame_width = 3
+    frame_width = 1
 
-    frame_color = "#495057"
+    frame_color = "#FFFFFF"
 
     # auto/foreground/frame/a color
     separator_color = frame
@@ -41,7 +42,7 @@
     idle_threshold = 60
 
     #### Text
-    font = SourceCodePro 8
+    font = Arimo Nerd Font 8
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -89,17 +90,17 @@
 
 
 [urgency_low]
-    background = "#212529"
-    foreground = "#ADB5BD"
+    background = "#000000"
+    foreground = "#333333"
     timeout = 10
 
 [urgency_normal]
-    background = "#343A40"
-    foreground = "#ADB5BD"
+    background = "#000000"
+    foreground = "#FFFFFF"
     timeout = 20
 
 [urgency_critical]
-    background = "#CED4DA"
-    foreground = "#343A40"
-    frame_color = "#E9ECEF"
+    background = "#FFFFFF"
+    foreground = "#000000"
+    frame_color = "#990000"
     timeout = 0

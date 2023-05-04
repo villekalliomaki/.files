@@ -1,0 +1,27 @@
+screenshot
+clock
+color=000000
+effect-blur=5x10
+bs-hl-color=30
+indicator-thickness=3
+inside-color=00000000
+line-uses-inside
+ring-color=666666
+ring-clear-color=FFFFFF
+ring-ver-color=00000000
+ring-wrong-color=990000
+inside-wrong-color=00000000
+inside-ver-color=00000000
+inside-clear-color=00000000
+inside-caps-lock-color=00000000
+separator-color=000000
+text-color=FFFFFF
+text-clear-color=FFFFFF
+text-caps-lock-color=FFFFFF
+text-ver-color=FFFFFFB3
+text-wrong-color=FFFFFF
+ring-color=000000
+key-hl-color=FFFFFF
+bs-hl-color=333333 
+timestr=%H:%M
+datestr=%A, %e.%m.%Y
