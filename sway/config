@@ -57,7 +57,7 @@ bindsym $mod+Shift+XF86MonBrightnessUp output * dpms on
 bindsym $mod+Shift+XF86MonBrightnessDown output * dpms off
 
 # Less blue light
-# exec wlsunset -l 60.192059 -L 24.945831 -t 3500 -T 6500
+exec wlsunset -l 60.192059 -L 24.945831 -t 3500 -T 6500
 
 ### Random wallapaper on start
 set $wallpaper_cmd find $HOME/wallpapers -type f | shuf -n 1
