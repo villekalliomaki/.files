@@ -4,8 +4,12 @@ export ZSH="/home/$USER/.oh-my-zsh"
 # Dark themes for things
 export GTK_THEME=Adwaita:dark
 
+# Config path for imv
+export imv_config="/home/$USER/.config/imv_config"
+
 # Wayland things
 export QT_QPA_PLATFORM=wayland-egl
+export GDK_BACKEND=wayland
 ###### Notice ######
 # Might have to be added to:
 # - ~/.pam_environment
@@ -20,6 +24,9 @@ eval "$(starship init zsh)"
 
 # Add pip/python install location and custom bin folder to path
 export PATH=$HOME/.bin:$HOME/.local/bin:$PATH
+
+# Rust cargo install path
+export PATH=$HOME/.cargo/bin:$PATH
 
 # Use terminal for GPG password prompt
 export GPG_TTY=$(tty)

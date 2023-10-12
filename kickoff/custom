@@ -2,3 +2,4 @@ codium-wl = /sbin/codium --enable-features=UseOzonePlatform --ozone-platform=way
 obsidian-wl = /sbin/obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland
 rstudio-wl = /usr/lib/rstudio/rstudio --enable-features=UseOzonePlatform --ozone-platform=wayland
 insomnia-wl = /sbin/insomnia --enable-features=UseOzonePlatform --ozone-platform=wayland
+darktable-wl = GDK_BACKEND=wayland darktable
