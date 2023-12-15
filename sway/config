@@ -47,6 +47,10 @@ input type:touchpad {
     tap enabled
     middle_emulation enabled
 }
+input type:pointer {
+    accel_profile "flat"
+    pointer_accel -0.08
+}
 
 #### Idle + lock
 # 5 min screen off
