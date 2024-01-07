@@ -13,6 +13,14 @@ output HDMI-A-1 pos 960 -1080 res 1920x1080
 output DP-2 pos 0 0 res 3840x2160
 # DP-1 (Dell right side)
 output DP-1 pos 3840 540 res 1920x1080
+# Philips 4K tv
+output DP-3 pos -3840 0 scale 2.5 res 3840x2160
+
+# Workspaces in correct places
+workspace 1 output DP-2
+workspace 10 output DP-1
+workspace 7 output HDMI-A-1
+workspace 0 output DP-3
 
 #### Backlight controls (https://www.reddit.com/r/swaywm/comments/fk08lu/comment/fkvhvkn/?utm_source=share&utm_medium=web2x&context=3)
 # User must have no-password sudo permissions to the light command
@@ -53,6 +61,10 @@ input type:touchpad {
     tap enabled
     middle_emulation enabled
 }
+input type:pointer {
+    accel_profile "flat"
+    pointer_accel -0.05
+}
 
 #### Idle + lock
 # 15 min screen sleep
@@ -61,7 +73,7 @@ exec swayidle -w \
     timeout 900 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
 
 # Less blue light
-# exec wlsunset -l 60.192059 -L 24.945831 -t 3500 -T 6500
+exec wlsunset -l 60.192059 -L 24.945831 -t 3500 -T 6500
 
 ### Random wallapaper on start
 set $wallpaper_cmd find $HOME/wallpapers -type f | shuf -n 1
@@ -123,6 +135,7 @@ bindsym $mod+7 workspace number 7
 bindsym $mod+8 workspace number 8
 bindsym $mod+9 workspace number 9
 bindsym $mod+0 workspace number 10
+bindsym $mod+Alt+0 workspace number 0
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number 1
 bindsym $mod+Shift+2 move container to workspace number 2
@@ -134,6 +147,7 @@ bindsym $mod+Shift+7 move container to workspace number 7
 bindsym $mod+Shift+8 move container to workspace number 8
 bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+Alt+Shift+0 move container to workspace number 0
 # Move workspaces between monitors
 bindsym $mod+Control+Right move workspace to output right
 bindsym $mod+Control+Left move workspace to output left
